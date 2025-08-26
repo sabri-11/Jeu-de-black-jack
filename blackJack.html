@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>BlackJack</title>
+  <link rel="stylesheet" href="blackJack.css">
+</head>
+<body>
+  <h1>Black jack (hors ligne)</h1>
+  
+  <div class="game-container">
+    <div class="table">
+      <div class="zone" id="zone-croupier">
+        <div>
+          <h2>Croupier</h2>
+          <div class="status">
+            <span id="score-croupier">Score : 0</span>
+          </div>
+          <div class="cartes" id="hand-croupier"></div>
+        </div>
+      </div>
+
+      <div class="zone" id="zone-joueur">
+        <div>
+          <h2>Joueur</h2>
+          <div class="status">
+            <span id="score-joueur">Score : 0</span>
+            &nbsp;|&nbsp;
+            <span id="argent-joueur">Argent : 0</span>
+          </div>
+          <div class="cartes" id="hand-joueur"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input type="number" id="entrerMise" placeholder="Mise" min="1" value="10" />
+      <button id="miser">Miser et commencer</button>
+      <button id="hit" disabled>Hit</button>
+      <button id="stand" disabled>Stand</button>
+      <button id="double" disabled>Double</button>
+    </div>
+
+    <div class="controls">
+      <button id="lancerTour" disabled>Prochain Tour</button>
+      <button id="quitter">Quitter</button>
+    </div>
+  </div>
+
+  <script src="blackJack.js"></script>
+</body>
+</html>
